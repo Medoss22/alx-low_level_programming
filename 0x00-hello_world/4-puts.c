@@ -2,7 +2,7 @@
 /**
 *main- Entry print
 *
-*Description: Print \"Programming is like building o multilinguale puzzle
+*Description: Print \"Programming is like building a multilinguale puzzle
 *Return: Always 0 (Success)
 */
 
