@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
-* main - Enter print 
+* main - Enter printer 
 *
 *Description : is your number negative, positive or zero
 *Return: Always 0 (Success)
