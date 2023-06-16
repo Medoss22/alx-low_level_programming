@@ -8,7 +8,7 @@ int main(void)
 {
 	int D;
 
-	for (D = 0; D < 10;D++)
+	for (D = 0; D < 10; D++)
 	{
 		putchar('0' + D);
 		if (D != 9)
