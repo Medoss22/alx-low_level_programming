@@ -8,11 +8,11 @@ int main(void)
 {
 	int num;
 
-	for (num = 0; nom <10; num++)
+	for (num = 0; num <10; num++)
 	{
 		putchar('0' + num);
 	}
-	for (num = 'a'; nim <= 'f'; num++)
+	for (num = 'a'; num <= 'f'; num++)
 	{
 		putchart(num);
 	}
