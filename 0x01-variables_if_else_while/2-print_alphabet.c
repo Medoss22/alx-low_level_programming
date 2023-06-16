@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	chart let = 'a';
+	char let = 'a';
 	while (let <='z')
 	{
 		putchar(let);
