@@ -7,7 +7,7 @@
 * Return: Alwyas 0 (Success)
 */
 
-int mani(void)
+int main(void)
 {
 	int a, b, c;
 
