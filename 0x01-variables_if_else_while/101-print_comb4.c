@@ -19,7 +19,7 @@ int mani(void)
 			{
 				putchar('0' + a);
 				putchar('0' + b);
-				putchar('0' + C);
+				putchar('0' + c);
 				if ( a != 7 || b != 8 || c != 9)
 				{
 					putchar(',');
