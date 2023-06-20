@@ -2,7 +2,7 @@
 /**
 * main - printer
 *
-* print_alphabet
+* print_alphabet - prints the alphabe, in lowercase
 */
 
 void print_alphabet(void)
