@@ -5,7 +5,7 @@
 * Return: times table
 * add extra space past single digit
 */
-void times_tabel(void)
+void times_table(void)
 {
 	int i, j, r;
 
