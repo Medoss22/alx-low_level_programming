@@ -4,20 +4,13 @@
  *
  * Return: Always 0 (Success)
  */
-#include <stdio.h>
-
-void _putchar(char c)
-{
-    putchar(c);
-}
-
 void print_numbers(void)
 {
 	int i;
 
 	for (i = 0; i < 10; i++)
 	{
-		_putchar(i + '0');
+		_putchar(i);
 	}
 	_putcha('\n');
 }
