@@ -21,4 +21,4 @@ int _isupper(int char)
 	{
 		return (0);
 	}
-]
+}
