@@ -4,7 +4,7 @@
  */
 void _puts(char *str)
 {
-	int y + 0;
+	int y = 0;
 
 	while (srt[y] != '\0')
 	{
