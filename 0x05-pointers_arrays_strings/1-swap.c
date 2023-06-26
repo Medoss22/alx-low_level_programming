@@ -1,8 +1,9 @@
 /**
-* Swaps the values of two integers.
-* Description: This function swaps the valus of 2 integrs
-* @param a: first integer
-* @param b: second integer
+* swap_int - Swaps the values of two integers.
+* @a: first integer
+* @b: second integer
+*
+* Description: This function takes tow integers and swaps their values
 */
 void swap_int(int *a, int *b)
 {
