@@ -3,7 +3,7 @@
  * @n: The number to calculate the square root of
  * Return: The natural square root of n, or -1 if it does not have a natural square root
  */
-int _sqrt_recursion(int n
+int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
