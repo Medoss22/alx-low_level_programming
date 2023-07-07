@@ -19,3 +19,5 @@ int main(int argc, char *argv[])
 	int r = n1 * n2;
 
 	printf("%d\n", r);
+	return (0);
+}
