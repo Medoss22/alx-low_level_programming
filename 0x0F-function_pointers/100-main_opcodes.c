@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 
 	for (x = 0; x < bts; x++)
 	{
-		if (i == bts - 1)
+		if (x == bts - 1)
 		{
 			printf("%02hhx\n", arr[x]);
 			break;
