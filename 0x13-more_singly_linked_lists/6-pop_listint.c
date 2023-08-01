@@ -14,7 +14,7 @@ int pop_listint(listint_t **head)
 	D =  (*head)->n;
 	firstnode = *head;
 	*head = (*head)->next;
-	free(fr_firstnode);
+	free(firstnode);
 
 	return (D);
 }
