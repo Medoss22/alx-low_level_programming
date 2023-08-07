@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
 * create_file - Create a function that creates a file.
 * @filename: pointer to name of file.
@@ -7,26 +8,21 @@
 */
 int create_file(const char *filename, char *text_content)
 {
-	int fd, b_written;
-	mode_t mode = S_IRUSR | S_IWUSR;
+	int f, w_file;
 
-	if (filename == NULL)
+	if (!filename)
+		return (-1);
+	f = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
+	if (f == -1)
 		return (-1);
 
-	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, mode);
-	if (fd == -1)
-		return (-1);
-
-	if (text_content != NULL)
+	if (text_content)
 	{
-		b_written = write(fd, text_content, strlen(text_content));
-		if (b_written == -1)
-		{
-			close(fb);
+		w_file = write(f, text_content, strlen(text_content));
+		if (w_file == -1)
 			return (-1);
-		}
 	}
 
-	close(fb);
+	close(f);
 	return (1);
 }
