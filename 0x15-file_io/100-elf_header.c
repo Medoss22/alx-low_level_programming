@@ -13,7 +13,7 @@
 */
 int main(int argc, char **argv)
 {
-    int f, read_f;
+    int file, read_file;
     Elf64_Ehdr reader;
 
     if (argc != 2)
@@ -22,14 +22,14 @@ int main(int argc, char **argv)
         exit(98);
     }
 
-    f = open(argv[1], O_RDONLY);
+    file = open(argv[1], O_RDONLY);
     
-	if (f == -1)
+	if (file == -1)
     {
         dprintf(STDERR_FILENO, "Error can't open this file %s\n", argv[1]);
         exit(98);
     }
     
-    close(f);
+    close(file);
     return (0);
 }
