@@ -16,6 +16,6 @@ void print_binary(unsigned long int n)
 	}
 	count;
 	do {
-		_putchar((n >> count & 1) + '0');
+		_putchar((n >> count-- & 1) + '0');
 	} while (count >= 0);
 }
