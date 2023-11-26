@@ -6,16 +6,16 @@
 */
 void print_binary(unsigned long int n)
 {
-	int count = 0;
+	int count_bit = 0;
 	unsigned long int second_n = n;
 
 	while (second_n > 0)
 	{
 		second_n >>= 1;
-		count++;
+		count_bit++;
 	}
-	count;
+	count_bit--;
 	do {
-		_putchar((n >> count-- & 1) + '0');
-	} while (count >= 0);
+		_putchar((n >> count_bit-- & 1) + '0');
+	} while (count_bit >= 0);
 }
