@@ -7,9 +7,9 @@
 */
 int main(int argc, char **argv)
 {
-	int file, r_file;
+	int file, read_file;
 	char stored[64];
-
+	/*Elf64_Ehdr *header;*/
 
 	if (argc != 2)
 	{
@@ -23,8 +23,8 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Error: can't open this file %s\n", argv[1]);
 		exit(98);
 	}
-	r_file = read(file, stored, 64);
-	if (r_file == -1)
+	read_file = read(file, stored, 64);
+	if (read_file == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: can't read from this file %s\n", argv[1]);
 		exit(98);
